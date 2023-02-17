@@ -68,11 +68,7 @@ img {
     background-position: center;
     padding: 5rem 0;
 }
-@media (min-width: 768px) {
-    .header {
-        padding: 2rem 0;
-    }
-}
+
 .contenido-header {
     display: flex;
     flex-direction: column;
@@ -103,5 +99,82 @@ img {
     }
 }
 
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+.telefono {
+    display: flex;
+}
+.telefono::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(/img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1rem;
+}
+.header a {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+.navegacion a {
+    padding: .5rem;
+    transition: background-color 300ms;
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        padding: 1rem 2rem;
+    }
+}
 
-
+.navegacion a:hover {
+    background-color: rgb(255 255 255 / .5);
+    color: var(--negro);
+}
+.eslogan {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .eslogan {
+        text-align: right;
+    }
+}
+.eslogan h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .eslogan h1 {
+        font-size: 5rem;
+    }
+}
+.eslogan p {
+    margin: 0;
+    line-height: 1;
+}
